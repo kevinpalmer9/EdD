@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
-        float cantidad = 0;
+        float cantidad = 10;
         
         
         
@@ -31,7 +31,7 @@ public class Main {
         }
         try {
             System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(695);
+            cuenta1.ingresar(cantidad);
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
