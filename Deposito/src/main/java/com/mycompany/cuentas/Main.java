@@ -25,13 +25,13 @@ public class Main {
 
     private static void Operativa_cuenta(CCuenta cuenta1, float cantidad) {
         try {
-            cuenta1.retirar(2300);
+            cuenta1.retirar(cantidad);
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
         }
         try {
             System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(650);
+            cuenta1.ingresar(cantidad);
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
