@@ -15,23 +15,26 @@ public class Main {
         float cantidad = 10;
         
         
+//Incluyo ciertos comentarios
+
         
         cuenta1 = new CCuenta("Antonio Lopez","1000-2365-85-1230456789",2500,0);
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es "+ saldoActual );
 
+        System.out.println("Esto se incluye");
         Operativa_cuenta(cuenta1, cantidad);
     }
 
     private static void Operativa_cuenta(CCuenta cuenta1, float cantidad) {
         try {
-            cuenta1.retirar(2300);
+            cuenta1.retirar(cantidad);
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
         }
         try {
             System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(650);
+            cuenta1.ingresar(cantidad);
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
