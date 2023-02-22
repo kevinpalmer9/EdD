@@ -16,9 +16,9 @@ public class Main {
         
         
         
-        cuenta1 = new CCuenta("Antonio LÃ³pez","1000-2365-85-1230456789",2500,0);
+        cuenta1 = new CCuenta("Antonio Lopez","1000-2365-85-1230456789",2500,0);
         saldoActual = cuenta1.estado();
-        System.out.println("El saldo actual es"+ saldoActual );
+        System.out.println("El saldo actual es "+ saldoActual );
 
         Operativa_cuenta(cuenta1, cantidad);
     }
