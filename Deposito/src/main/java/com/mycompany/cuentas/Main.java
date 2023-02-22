@@ -31,7 +31,7 @@ public class Main {
         }
         try {
             System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(cantidad);
+            cuenta1.ingresar(650);
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
