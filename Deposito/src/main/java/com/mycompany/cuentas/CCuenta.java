@@ -7,11 +7,12 @@ package com.mycompany.cuentas;
 /**
  *
  * @author kevpa
+ * @version 2.0 Version modificada
  */
 public class CCuenta {
 
     /**
-     * @return the nombre
+     * @return the nombre S
      */
     public String getNombre() {
         return nombre;
@@ -72,10 +73,20 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
 
+    /**
+     *
+     */
     public CCuenta()
     {
     }
 
+    /**
+     *
+     * @param nom Nombre del titular
+     * @param cue Cuenta del titular
+     * @param sal Saldo de la cuenta
+     * @param tipo Tipo
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -83,11 +94,20 @@ public class CCuenta {
         saldo=sal;
     }
 
+    /**
+     *
+     * @return Devuelve saldo de la cuenta
+     */
     public double estado()
     {
         return getSaldo();
     }
 
+    /**
+     *
+     * @param cantidad Metodo recibe cantidad de dinero desde la clase Main. Cantidad de dinero a ingresar
+     * @throws Exception Cantidad no puede ser menor que cero
+     */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -95,6 +115,11 @@ public class CCuenta {
         setSaldo(getSaldo() + cantidad);
     }
 
+    /**
+     *
+     * @param cantidad Metodo recibe cantidad de dinero desde la clase Main. Cantidad de dinero a retirar
+     * @throws Exception Cantidad no puede ser menor que cero
+     */
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
